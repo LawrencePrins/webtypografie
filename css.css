@@ -9,6 +9,9 @@ Feel free to adjust the defaults to your needs.
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
+    /* zet de tekst in het midden van het scherm */
+    left: 50%;
+    transform: translate(-50%);
 }
 #closed-captions .on {
 	opacity: 1;
@@ -19,6 +22,14 @@ Feel free to adjust the defaults to your needs.
 }
 .voice1 {
 	font-style: italic;
+    background-color: white;
+}
+.voice3 {
+    background-color: red;
+}
+
+.voice4 {
+    background-color: greenyellow;
 }
 
 /* **********************************************
@@ -107,8 +118,34 @@ Sounds.
 	background: yellow;
 }
 
+.sound3 {
+    background: red;
+}
+
+.sound4 {
+    background: blue;
+}
+
+.sound5 {
+    background: red;
+}
+
+.sound6 {
+    background: blue;
+}
+
+.sound7 {
+    background: red;
+}
+
+.sound8 {
+    background: blue;
+}
+
 iframe {
 	transition: 1s;
+    width: 100%;
+    
 }
 /* The moment the class .sound1 is added to the body, the movie makes a turn */
 .sound1 iframe {
