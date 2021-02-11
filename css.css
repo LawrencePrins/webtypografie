@@ -5,24 +5,102 @@ Show them when they receive the class 'on'
 Hide them when they receive the class 'off'
 Feel free to adjust the defaults to your needs.
 ********************************************** */
-#closed-captions p {
+#closed-captions p{
 	opacity: 0;
 	transition: .05s;
 	position: absolute;
-    /* zet de tekst in het midden van het scherm */
     left: 50%;
     transform: translate(-50%);
 }
-#closed-captions .on {
+#closed-captions .on{
 	opacity: 1;
 }
-#closed-captions .off {
+#closed-captions .off{
 	transition: .2s;
 	opacity: 0;
 }
-.voice1 {
-	font-style: italic;
-    background-color: white;
+
+body {
+    background-color: black;
+    background-image: url(images/background_dark.png);
+    background-size: cover;
+}
+
+.speech_placement{
+    display: inline-block;
+    float: left;
+    margin: 40px 0 0 330px;
+}
+.speech{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+}
+.speech .stroke{
+    display: block;
+    position: relative;
+    background: rgba(57, 154, 173, 0.5);
+    box-shadow: 0 0 30px 0px #399aad;
+    height: 100%;
+    width: 10px; 
+    border-radius: 50px;
+    margin: 0 5px;
+    animation: animate 0.4s linear infinite;
+}
+@keyframes animate{
+    50%{
+        height: 20%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.4s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.1s;
+}
+.voice1{
+    width: 33%;
+    margin: 30px auto 0;
+    padding: 10px 100px;
+    background: rgba(17, 41, 46, 0.7);
+    box-shadow:  0 0 40px 0 #2c626e;
+    border: 3px solid #399aad;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "brenner slab";
+    font-style: italic;
+    text-shadow: 0 0 10px;
+    text-align: center;
+    color: #e6a315;
+    z-index: -1;
+}
+/* cells by robot voice*/
+p:nth-of-type(9){
+    font-size: 25px;
+}
+
+p:nth-of-type(12){
+    font-size: 25px;
+}
+p:nth-of-type(15){
+    font-size: 25px;
+}
+p:nth-of-type(18){
+    font-size: 25px;
+}
+
+.voice2{
+    color: white;
 }
 .voice3 {
     background-color: red;
@@ -113,41 +191,225 @@ Sounds.
 	a sound starts.
 *********************************************  */
 
-/* The moment the class .sound1 is added to the body, the background is yellow */
-.sound1 {
-	background: yellow;
+.sound1 .speech{
+    animation: sound1 4s;
+    animation-iteration-count: 1;
 }
-
-.sound3 {
-    background: red;
+@keyframes sound1 {
+    from {opacity: 1}
+    to {opacity: 1}
 }
-
-.sound4 {
-    background: blue;
+.sound2 {
+    transition: 1s;
+	background-image: url(images/background.png);
+    background-size: cover;
+    background-color: black;
 }
-
-.sound5 {
-    background: red;
+.sound3 .speech{
+    animation: sound3 1.4s;
+    animation-iteration-count: 1;
 }
-
-.sound6 {
-    background: blue;
+@keyframes sound3 {
+    from {opacity: 1}
+    to {opacity: 1}
 }
-
-.sound7 {
-    background: red;
+.sound8{
+    transition: 10s;
+    background-image: url(images/background_dark.png);
+    background-size: cover;
+    background-color: black;
 }
-
-.sound8 {
-    background: blue;
+.sound8 .speech{
+    animation: sound8 0.3s;
+    animation-iteration-count: 1;
 }
-
+@keyframes sound8 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound9 .speech{
+    animation: sound9 2.5s;
+    animation-iteration-count: 1;
+}
+@keyframes sound9 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound10 .speech{
+    animation: sound10 0.1s;
+    animation-iteration-count: 1;
+}
+@keyframes sound10 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound11 .speech{
+    animation: sound11 1.5s;
+    animation-iteration-count: 1;
+}
+@keyframes sound11 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound12 .speech{
+    animation: sound12 0.1s;
+    animation-iteration-count: 1;
+}
+@keyframes sound12 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound13 .speech{
+    animation: sound13 3s;
+    animation-iteration-count: 1;
+}
+@keyframes sound13 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound14 .speech{
+    animation: sound14 0.1s;
+    animation-iteration-count: 1;
+}
+@keyframes sound14 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound15 .speech{
+    animation: sound15 0.4s;
+    animation-iteration-count: 1;
+}
+@keyframes sound15 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound16 .speech{
+    animation: sound16 2s;
+    animation-iteration-count: 1;
+}
+@keyframes sound16 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound17 .speech{
+    animation: sound17 0.4s;
+    animation-iteration-count: 1;
+}
+@keyframes sound17 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound18 .speech{
+    animation: sound18 2s;
+    animation-iteration-count: 1;
+}
+@keyframes sound18 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound19 .speech{
+    animation: sound19 0.4s;
+    animation-iteration-count: 1;
+}
+@keyframes sound19 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound20 .speech{
+    animation: sound20 2s;
+    animation-iteration-count: 1;
+}
+@keyframes sound20 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound21 .speech{
+    animation: sound21 0.4s;
+    animation-iteration-count: 1;
+}
+@keyframes sound21 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound22 .speech{
+    animation: sound22 1.7s;
+    animation-iteration-count: 1;
+}
+@keyframes sound22 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound23 .speech{
+    animation: sound23 2.6s;
+    animation-iteration-count: 1;
+}
+@keyframes sound23 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound24 .speech{
+    animation: sound24 0.4s;
+    animation-iteration-count: 1;
+}
+@keyframes sound24 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound25 .speech{
+    animation: sound25 2s;
+    animation-iteration-count: 1;
+}
+@keyframes sound25 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound26 .speech{
+    animation: sound26 0.4s;
+    animation-iteration-count: 1;
+}
+@keyframes sound26 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound27 .speech{
+    animation: sound27 1.1s;
+    animation-iteration-count: 1;
+}
+@keyframes sound27 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound28 .speech{
+    animation: sound28 2.4s;
+    animation-iteration-count: 1;
+}
+@keyframes sound28 {
+    from {opacity: 1}
+    to {opacity: 1}
+}
+.sound23 iframe{
+    transition: 15s;
+    width: 46%;
+}
+.sound29 iframe{
+    transition: 1s;
+    width: 50%;
+}
+.sound30{
+    transition: 1s;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-color: black;
+}
 iframe {
 	transition: 1s;
-    width: 100%;
-    
+    width: 50%;
+    display: block;
+    margin: 50px auto 0;
+    box-shadow: 0 0 40px 2px #333333;
+ 
 }
-/* The moment the class .sound1 is added to the body, the movie makes a turn */
+/* The moment the class .sound1 is added to the body, the movie makes a turn 
 .sound1 iframe {
 	transform: rotate(1turn);
-}
+} /*
