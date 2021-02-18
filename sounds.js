@@ -14,9 +14,9 @@ sounds = [
 // sound 5 | main alarm
     15,
 // sound 6 | main alarm
-    16,
+    24,
 // sound 7 | main alarm
-    17,
+    30.9,
 // sound 8 | speech "Cells"
     32.8,
 // sound 9 | speech "Have you ever been in institution?"
@@ -62,6 +62,9 @@ sounds = [
 //sound 29 | music stops.
     75,
 //sound 30 | speech "we're done"
-    77,
-
+    77.3,
+//sound 31 | speech "Constant K"
+    80,
+//sound 32 | speecht "You can pick up your bonus"
+    82.5
 ];
